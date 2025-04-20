@@ -4,7 +4,6 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/HomePage/Hero";
 import { CaseStudies } from "@/components/HomePage/CaseStudies";
 import { FAQ } from "@/components/HomePage/FAQ";
-import { CallToAction } from "@/components/HomePage/CallToAction";
 
 const Index = () => {
   return (
@@ -14,7 +13,6 @@ const Index = () => {
         <Hero />
         <CaseStudies />
         <FAQ />
-        <CallToAction />
       </main>
       <Footer />
     </div>

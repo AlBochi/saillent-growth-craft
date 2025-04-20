@@ -48,10 +48,10 @@ export function FAQ() {
               Don't see your question here? Contact us for more information.
             </p>
             <a 
-              href="mailto:info@saillent.com" 
+              href="mailto:albochi@saillent.com" 
               className="text-saillent-orange font-medium hover:text-saillent-darkblue transition"
             >
-              info@saillent.com
+              albochi@saillent.com
             </a>
           </div>
         </div>
