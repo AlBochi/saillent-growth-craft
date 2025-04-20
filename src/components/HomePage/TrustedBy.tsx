@@ -15,8 +15,6 @@ export function TrustedBy() {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-2xl font-semibold text-gray-700 mb-10">Trusted by Industry Leaders</h2>
-        
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-center">
           {clients.map((client, index) => (
             <div key={index} className="flex justify-center">
@@ -32,3 +30,4 @@ export function TrustedBy() {
     </section>
   );
 }
+
