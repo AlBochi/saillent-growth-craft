@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { linkedin } from "lucide-react";
 
 export function CaseStudies() {
   const caseStudies = [
@@ -30,8 +31,19 @@ export function CaseStudies() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-saillent-darkblue mb-4">Success Stories</h2>
+        <div className="flex items-center justify-center mb-16 space-x-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-saillent-darkblue">Success Stories</h2>
+          <a 
+            href="https://www.linkedin.com/in/yaman-al-bochi" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="LinkedIn Profile"
+            className="text-saillent-orange hover:text-saillent-darkblue transition"
+          >
+            <linkedin size={28} />
+          </a>
+        </div>
+        <div className="text-center mb-4">
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             See how Saillent has helped businesses reduce churn and improve their online reputation.
           </p>
@@ -94,3 +106,4 @@ export function CaseStudies() {
     </section>
   );
 }
+
