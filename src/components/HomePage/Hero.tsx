@@ -22,21 +22,6 @@ export function Hero() {
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Whether you're fighting customer churn or battling bad reviews, we turn insights into action—and results.
             </p>
-            
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link 
-                to="/services#retention" 
-                className="bg-saillent-orange text-white font-medium px-8 py-3 rounded-full hover:bg-opacity-90 transition text-center shadow-lg hover:shadow-xl"
-              >
-                Get Started with Churn Reduction
-              </Link>
-              <Link 
-                to="/services#reputation" 
-                className="bg-white border-2 border-saillent-orange text-saillent-orange font-medium px-8 py-3 rounded-full hover:bg-saillent-orange hover:text-white transition text-center"
-              >
-                Boost My Online Reputation
-              </Link>
-            </div>
           </div>
           
           <div className="lg:w-1/2">
