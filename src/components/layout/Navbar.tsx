@@ -26,17 +26,13 @@ export function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
           <Link to="/" className="font-medium text-gray-700 hover:text-saillent-orange transition">Home</Link>
-          <Link to="/about" className="font-medium text-gray-700 hover:text-saillent-orange transition">About</Link>
-          <Link to="/services" className="font-medium text-gray-700 hover:text-saillent-orange transition">Services</Link>
           <Link to="/case-studies" className="font-medium text-gray-700 hover:text-saillent-orange transition">Case Studies</Link>
-          <Link to="/blog" className="font-medium text-gray-700 hover:text-saillent-orange transition">Blog</Link>
-          <Link to="/contact" className="font-medium text-gray-700 hover:text-saillent-orange transition">Contact</Link>
         </div>
 
         {/* Call to Action */}
         <div className="hidden md:block">
           <Link 
-            to="/contact" 
+            to="/" 
             className="bg-saillent-orange text-white font-medium px-6 py-2 rounded-full hover:bg-opacity-90 transition"
           >
             Get Started
@@ -72,14 +68,10 @@ export function Navbar() {
       )}>
         <div className="flex flex-col space-y-3">
           <Link to="/" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">Home</Link>
-          <Link to="/about" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">About</Link>
-          <Link to="/services" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">Services</Link>
           <Link to="/case-studies" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">Case Studies</Link>
-          <Link to="/blog" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">Blog</Link>
-          <Link to="/contact" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">Contact</Link>
           
           <Link 
-            to="/contact" 
+            to="/" 
             className="bg-saillent-orange text-white font-medium px-6 py-2 rounded-full hover:bg-opacity-90 transition text-center mt-4"
           >
             Get Started
