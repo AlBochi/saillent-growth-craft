@@ -52,6 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				saillent: {
+					mint: '#d2f1a4',
+					orange: '#ff4c13',
+					darkblue: '#0e2b4a',
+					lightblue: '#0ea5e9',
+					darkgray: '#333333',
+					lightgray: '#f3f3f3',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
