@@ -81,3 +81,7 @@
     "vite": "^5.4.1"
   }
 }
+"scripts": {
+  "build": "vite build && cp -r public/* dist/",  // Copies static files
+  // ... keep other scripts
+}
