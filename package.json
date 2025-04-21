@@ -82,6 +82,5 @@
   }
 }
 "scripts": {
-  "build": "vite build && cp -r public/* dist/",  // Copies static files
-  // ... keep other scripts
+  "build": "vite build && cp -r public/* dist/", 
 }
