@@ -30,13 +30,13 @@ export function Hero() {
             <div className="relative">
               <div className="relative z-10 bg-white rounded-lg shadow-2xl p-1">
                 <img
-                  src="/lovable-uploads/ffbee77b-4e55-4f81-9eda-8f5f134cd420.png"
-                  alt="Saillent Logo"
-                  className="w-full rounded-md"
-                />
+  src="/old-logo-path.png"
+  alt="Saillent Logo"
+  className="h-10"
+/>
               </div>
               <div className="absolute -top-6 -left-6 w-64 h-64 bg-saillent-mint rounded-full opacity-50 -z-10"></div>
-              <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-saillent-orange rounded-full opacity-30 -z-10"></div>
+             <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-saillent-orange rounded-full opacity-30 -z-10"></div>
             </div>
           </div>
         </div>

@@ -1,29 +1,22 @@
+// src/App.tsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/layout/Header";
+import Hero from "./components/layout/Hero"; // Import the Hero component
+import Services from "./components/layout/Services"; // Import the Services component
+const App = () => {
+  return (
+    <Router>
+      {/* Header is displayed on all pages */}
+      <Header />
 
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import CaseStudies from "./pages/CaseStudies";
-import NotFound from "./pages/NotFound";
-
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+      {/* Define routes for different pages */}
+      <Routes>
+        <Route path="/" element={<Hero />} /> {/* Home Page */}
+        <Route path="/services" element={<Services />} /> {/* Services Page */}
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
