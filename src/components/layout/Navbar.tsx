@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { Linkedin, Phone, Mail } from "lucide-react";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,41 +25,36 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 items-center">
           <Link to="/" className="font-medium text-gray-700 hover:text-saillent-orange transition">Home</Link>
           <Link to="/case-studies" className="font-medium text-gray-700 hover:text-saillent-orange transition">Case Studies</Link>
-        </div>
-
-        {/* Call to Action */}
-        <div className="hidden md:block">
-          <Link 
-            to="/" 
-            className="bg-saillent-orange text-white font-medium px-6 py-2 rounded-full hover:bg-opacity-90 transition"
+          
+          <a 
+            href="https://www.linkedin.com/company/saillent/?viewAsMember=true" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-700 hover:text-saillent-orange transition"
+            aria-label="LinkedIn"
           >
-            Get Started
-          </Link>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-gray-700" 
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="h-6 w-6" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
+            <Linkedin size={20} />
+          </a>
+          
+          <a 
+            href="tel:+16133011944" 
+            className="text-gray-700 hover:text-saillent-orange transition"
+            aria-label="Phone"
           >
-            {isMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
+            <Phone size={20} />
+          </a>
+          
+          <a 
+            href="mailto:albochi@saillent.com" 
+            className="text-gray-700 hover:text-saillent-orange transition"
+            aria-label="Email"
+          >
+            <Mail size={20} />
+          </a>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -70,12 +66,33 @@ export function Navbar() {
           <Link to="/" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">Home</Link>
           <Link to="/case-studies" className="font-medium text-gray-700 hover:text-saillent-orange transition py-2">Case Studies</Link>
           
-          <Link 
-            to="/" 
-            className="bg-saillent-orange text-white font-medium px-6 py-2 rounded-full hover:bg-opacity-90 transition text-center mt-4"
-          >
-            Get Started
-          </Link>
+          <div className="flex space-x-4 py-2 justify-center">
+            <a 
+              href="https://www.linkedin.com/company/saillent/?viewAsMember=true" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-saillent-orange transition"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+            
+            <a 
+              href="tel:+16133011944" 
+              className="text-gray-700 hover:text-saillent-orange transition"
+              aria-label="Phone"
+            >
+              <Phone size={20} />
+            </a>
+            
+            <a 
+              href="mailto:albochi@saillent.com" 
+              className="text-gray-700 hover:text-saillent-orange transition"
+              aria-label="Email"
+            >
+              <Mail size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </nav>

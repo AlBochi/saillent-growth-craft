@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 export function CaseStudies() {
   const caseStudies = [
@@ -40,7 +39,7 @@ export function CaseStudies() {
             aria-label="LinkedIn Profile"
             className="text-saillent-orange hover:text-saillent-darkblue transition"
           >
-            <linkedin size={28} />
+            <Linkedin size={28} />
           </a>
         </div>
         <div className="text-center mb-4">
@@ -106,4 +105,3 @@ export function CaseStudies() {
     </section>
   );
 }
-
